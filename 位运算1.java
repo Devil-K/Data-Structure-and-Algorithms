@@ -23,7 +23,7 @@ public class 位运算1 {
 		//int index=new Random().nextInt(n);//随机下标 和最后一个交换位置
 		
 		int x1=0;
-		for(int i=1;i<arr.length;i++){
+		for(int i=1;i<arr.length;i++){//arr.length 改为N才符合要求
 			x1=x1^i;			
 		}
 		for(int i=0; i<arr.length;i++){
