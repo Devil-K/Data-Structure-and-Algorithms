@@ -12,6 +12,9 @@ import java.util.Random;
  *不用辅助存储空间，能否设计一个算法实现？
  */
 public class 位运算1 {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int n=11;
 		int[] arr=new int[n];		
@@ -40,6 +43,19 @@ public class 位运算1 {
 			sum2+=arr[i];
 		}
 		System.out.println(sum-sum2);
+		
+		
+		System.out.println("------方法三--------");
+		int[] helper=new int[n];
+		for (int i = 0; i < n; i++) {
+			helper[arr[i]]++;
+		}
+		for (int i = 0; i <n; i++) {
+			if(helper[i]==2){
+				System.out.println(i);
+				break;
+			}
+		}
 	}
 	
 
