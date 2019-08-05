@@ -31,7 +31,7 @@ public class 位运算1 {
 		}
 		System.out.println(x1);
 		
-		System.out.println("---------------");
+		System.out.println("------方法二--------");
 		int sum=0;int sum2=0;
 		for (int i=0;i<arr.length;i++ ){
 			sum+=arr[i];
